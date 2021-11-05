@@ -4,7 +4,7 @@ import sqlite3
 
 import random
 
-conn = sqlite3.connect('db/dw.db')
+conn = sqlite3.connect('db/dw.db', check_same_thread=False)
 cursor = conn.cursor()
 
 
@@ -46,11 +46,6 @@ def newTransaction():
 	'store': store_name}
 
 	return response
-
-
-for i in range(50):
-	print(newTransaction())
-
 
 
 

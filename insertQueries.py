@@ -1,6 +1,6 @@
 import sqlite3
 
-conn = sqlite3.connect('db/dw.db')
+conn = sqlite3.connect('db/dw.db', check_same_thread=False)
 cursor = conn.cursor()
 
 def insertFactTable(costumer_key, product_key, promotion_key, store_key, time_key,value_sold_brl, units_sold):
