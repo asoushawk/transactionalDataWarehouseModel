@@ -59,3 +59,15 @@ def getBestMonth():
 
 	result = cursor.fetchall()
 	return result
+
+
+
+
+def getClientProfile():
+	cursor.execute("""SELECT c.purchase_profile, SUM(t.value_sold_brl) AS pf
+		FROM Sales_Fact as t
+		LEFT OUTER JOIN costumer_dimension AS c ON c.costumer_key = t.costumer_key
+		GROUP BY c.purchase_profile ORDER BY SUM(t.value_sold_brl) DESC""")
+
+	result = cursor.fetchall()
+	return result
