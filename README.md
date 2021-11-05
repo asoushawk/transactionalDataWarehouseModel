@@ -9,6 +9,8 @@ Some questions and answers using the Datawarehouse's data:
   - ![alt text](https://github.com/asoushawk/transactionalDataWarehouseModel/blob/main/img/bestdayoftheweek.png?raw=true)
   - Which country buys the most?
   - ![alt text](https://github.com/asoushawk/transactionalDataWarehouseModel/blob/main/img/country_ranking.png?raw=true)
+  - Which purchase_profile buys the most?
+  - ![alt text](https://github.com/asoushawk/transactionalDataWarehouseModel/blob/main/img/purchase_profile.png?raw=true)
   - What are my most sold products?
   - ![alt text](https://github.com/asoushawk/transactionalDataWarehouseModel/blob/main/img/most_sold_products.png?raw=true)
   - Which store sells the least?
