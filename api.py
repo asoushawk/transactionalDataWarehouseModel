@@ -153,6 +153,5 @@ def returnClientProfile():
 		'purchase_profile': purchase_profile,
 		'total_sold_brl': total_sold_brl}
 		data.append(dataDict)
-	
-	return jsonify(data)
 
+	return jsonify(data)
