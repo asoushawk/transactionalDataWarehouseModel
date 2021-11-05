@@ -1,10 +1,11 @@
 import flask
-
+import json
 from flask import render_template
 from flask import request, redirect, url_for, send_file, jsonify
 
 from transactions import *
 from analyticalQueries import *
+import json
 
 app = flask.Flask(__name__)
 
@@ -50,7 +51,7 @@ def returnTotalByCountry():
 		'total_sold_brl': total_sold_brl}
 		data.append(dataDict)
 
-	return jsonify(data)
+	return json.dumps({'data': data})
 
 @app.route('/api/getTotalByStore', methods=['GET'])
 def returnTotalByStore():
@@ -69,7 +70,7 @@ def returnTotalByStore():
 		'total_sold_brl': total_sold_brl}
 		data.append(dataDict)
 
-	return jsonify(data)
+	return json.dumps({'data': data})
 
 
 @app.route('/api/getProductWithMostUnitsSold', methods=['GET'])
@@ -90,7 +91,7 @@ def returnProductWithMostUnitsSold():
 		'units_sold': units_sold}
 		data.append(dataDict)
 
-	return jsonify(data)
+	return json.dumps({'data': data})
 
 @app.route('/api/getBestDayOfTheWeek', methods=['GET'])
 def returnBestDayOfTheWeek():
@@ -112,7 +113,7 @@ def returnBestDayOfTheWeek():
 		'total_sold_brl': total_sold_brl}
 		data.append(dataDict)
 
-	return jsonify(data)
+	return json.dumps({'data': data})
 
 @app.route('/api/getBestMonth', methods=['GET'])
 def returnBestMonth():
@@ -134,7 +135,7 @@ def returnBestMonth():
 		'total_sold_brl': total_sold_brl}
 		data.append(dataDict)
 
-	return jsonify(data)
+	return json.dumps({'data': data})
 
 @app.route('/api/getClientProfile', methods=['GET'])
 def returnClientProfile():
@@ -154,4 +155,4 @@ def returnClientProfile():
 		'total_sold_brl': total_sold_brl}
 		data.append(dataDict)
 
-	return jsonify(data)
+	return json.dumps({'data': data})
