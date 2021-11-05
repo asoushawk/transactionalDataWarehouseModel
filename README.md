@@ -1,5 +1,5 @@
 # transactionalDataWarehouseModel
-This project showcases a Dimensional Data Warehouse model, utilizing random data from Public APIs  to populate the DW. The fact table is transactional based.Data endpoints are available trough an API: https://transactionaldw.herokuapp.com/api
+This project showcases a Dimensional Data Warehouse model, utilizing random data from Public APIs  to populate the DW. The fact table is transactional based.Data endpoints are available through an API: https://transactionaldw.herokuapp.com/api
 
 
 ## Schema
