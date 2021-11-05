@@ -1,5 +1,5 @@
 from generateDimensionsData import *
-from insertQueries import *
+from queries.insertQueries import *
 import sqlite3
 
 import random

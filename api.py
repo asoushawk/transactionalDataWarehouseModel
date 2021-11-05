@@ -4,7 +4,7 @@ from flask import render_template
 from flask import request, redirect, url_for, send_file, jsonify
 
 from transactions import *
-from analyticalQueries import *
+from queries.analyticalQueries import *
 import json
 
 app = flask.Flask(__name__)
